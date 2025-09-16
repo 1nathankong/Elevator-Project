@@ -110,7 +110,7 @@ class Elevator:
                     print("Stay on Floor " + str(self.floor_input[0]) + "\n")
                 else:
                     for i in self.floor_input:
-                        if self.upward_valid:
+                        if self.upward_valid():
                             self.current_floor = i
                         start_floor = self.floor_input[0]
                     print(self.get_floor_input())
@@ -130,7 +130,7 @@ class Elevator:
                 else:
                     
                     for i in self.floor_input:
-                        if self.downward_valid:
+                        if self.downward_valid():
                             self.current_floor = i
                         start_floor = self.floor_input[0]
                     print(self.get_floor_input())
