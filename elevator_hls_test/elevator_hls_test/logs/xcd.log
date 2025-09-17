@@ -1,0 +1,25 @@
+09/17/25 08:36:53: Running xcd server. This server was built by gradle.
+09/17/25 08:36:53: Server was asked to start on port: '60331'
+09/17/25 08:36:53: Server is using token UUID: '5b0af283-cae0-4de5-9099-1cd2431992fa'
+09/17/25 08:36:53: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/17/25 08:36:53: Attempting to start server on port '60331'
+09/17/25 08:36:53: Running Dispatch Server
+09/17/25 08:36:53: Version 2.2.0
+09/17/25 08:36:55: Dispatch Server: Accepted socket connection from client
+09/17/25 08:36:55: Starting Socket connection
+09/17/25 08:36:55: EXCHANGE_TOKEN received, server token: 5b0af283-cae0-4de5-9099-1cd2431992fa, passed token: 5b0af283-cae0-4de5-9099-1cd2431992fa
+09/17/25 08:36:56: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+09/17/25 08:36:56: SESSION_MGR: creating session with session uuid: '2f036970-6fd7-408a-9480-22fa2d2fdd84' and name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:36:56: KERNEL_SVC: creating session with uuid: '2f036970-6fd7-408a-9480-22fa2d2fdd84' and name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:36:56: GUIDANCE_SMGR: creating guidance session with uuid: '2f036970-6fd7-408a-9480-22fa2d2fdd84' and name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:36:56: SYSTEM_DIAGRAM: creating session with uuid: '2f036970-6fd7-408a-9480-22fa2d2fdd84' and name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:37:02: Dispatch Server: Accepted socket connection from client
+09/17/25 08:37:02: Starting Socket connection
+09/17/25 08:37:09: SESSION_MGR: closing session for UUID '2f036970-6fd7-408a-9480-22fa2d2fdd84' with name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:37:09: KERNEL_SVC: closing session for UUID '2f036970-6fd7-408a-9480-22fa2d2fdd84' with name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:37:09: GUIDANCE_SMGR: closing session for UUID '2f036970-6fd7-408a-9480-22fa2d2fdd84' with name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:37:09: SYSTEM_DIAGRAM: closing session for UUID '2f036970-6fd7-408a-9480-22fa2d2fdd84' with name 'vitis-run_compile_elevator_hls_test'
+09/17/25 08:37:09: STOP_SERVER received, server token: 5b0af283-cae0-4de5-9099-1cd2431992fa, passed token: 5b0af283-cae0-4de5-9099-1cd2431992fa
+09/17/25 08:37:09: Socket received request to stop server.
+09/17/25 08:37:09: Dispatch Server: do_await_stop
+09/17/25 08:37:09: SERVER: destructor for server bound to port 60331
