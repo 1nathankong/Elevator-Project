@@ -1,0 +1,166 @@
+{
+  "test_summary": {
+    "total_tests": 6,
+    "python_implementation": "OptimizedElevator(num_floors=10)",
+    "vivado_implementation": "elevator_controller_10floor.v",
+    "test_scenarios": [
+      {
+        "test_number": 1,
+        "description": "add_multiple_requests([3,2,4,1])",
+        "start_floor": 1,
+        "requested_floors": [
+          3,
+          2,
+          4,
+          1
+        ],
+        "expected_final_floor": 4,
+        "expected_movements": 3,
+        "python_status": {
+          "current_floor": 4,
+          "state": "idle",
+          "direction": 1,
+          "pending_requests": [],
+          "up_queue": [],
+          "down_queue": []
+        }
+      },
+      {
+        "test_number": 2,
+        "description": "add_multiple_requests([8,3,10,1,6])",
+        "start_floor": 4,
+        "requested_floors": [
+          8,
+          3,
+          10,
+          1,
+          6
+        ],
+        "expected_final_floor": 1,
+        "expected_movements": 5,
+        "python_status": {
+          "current_floor": 1,
+          "state": "idle",
+          "direction": 0,
+          "pending_requests": [],
+          "up_queue": [],
+          "down_queue": []
+        }
+      },
+      {
+        "test_number": 3,
+        "description": "add_floor_request(7) from floor 5",
+        "start_floor": 5,
+        "requested_floors": [
+          7
+        ],
+        "expected_final_floor": 7,
+        "expected_movements": 1,
+        "python_status": {
+          "current_floor": 7,
+          "state": "idle",
+          "direction": 1,
+          "pending_requests": [],
+          "up_queue": [],
+          "down_queue": []
+        }
+      },
+      {
+        "test_number": 4,
+        "description": "Downward: floors [6,3,1] from floor 10",
+        "start_floor": 10,
+        "requested_floors": [
+          6,
+          3,
+          1
+        ],
+        "expected_final_floor": 1,
+        "expected_movements": 3,
+        "python_status": {
+          "current_floor": 1,
+          "state": "idle",
+          "direction": 0,
+          "pending_requests": [],
+          "up_queue": [],
+          "down_queue": []
+        }
+      },
+      {
+        "test_number": 5,
+        "description": "Edge case: request current floor",
+        "start_floor": 5,
+        "requested_floors": [
+          6
+        ],
+        "expected_final_floor": 6,
+        "expected_movements": 1,
+        "python_status": {
+          "current_floor": 6,
+          "state": "idle",
+          "direction": 1,
+          "pending_requests": [],
+          "up_queue": [],
+          "down_queue": []
+        }
+      },
+      {
+        "test_number": 6,
+        "description": "Large span: floors [1,5,10]",
+        "start_floor": 6,
+        "requested_floors": [
+          1,
+          5,
+          10
+        ],
+        "expected_final_floor": 1,
+        "expected_movements": 3,
+        "python_status": {
+          "current_floor": 1,
+          "state": "idle",
+          "direction": 0,
+          "pending_requests": [],
+          "up_queue": [],
+          "down_queue": []
+        }
+      }
+    ]
+  },
+  "expected_vivado_results": {
+    "test_1": {
+      "final_floor": 4,
+      "movement_count": 3,
+      "pending_requests": []
+    },
+    "test_2": {
+      "final_floor": 1,
+      "movement_count": 5,
+      "pending_requests": []
+    },
+    "test_3": {
+      "final_floor": 7,
+      "movement_count": 1,
+      "pending_requests": []
+    },
+    "test_4": {
+      "final_floor": 1,
+      "movement_count": 3,
+      "pending_requests": []
+    },
+    "test_5": {
+      "final_floor": 6,
+      "movement_count": 1,
+      "pending_requests": []
+    },
+    "test_6": {
+      "final_floor": 1,
+      "movement_count": 3,
+      "pending_requests": []
+    }
+  },
+  "validation_criteria": {
+    "final_floor_match": "Final floor must match exactly",
+    "movement_efficiency": "Movement count should be similar (\u00b11)",
+    "state_transitions": "Must follow same SCAN algorithm",
+    "request_handling": "Must process requests in same order"
+  }
+}

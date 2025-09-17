@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\..\\elevator_hls.cpp"
+    ],
+    "file": "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\..\\elevator_hls.cpp"
+  },
+  {
+    "directory": "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\..\\elevator_hls_tb.cpp"
+    ],
+    "file": "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\..\\elevator_hls_tb.cpp"
+  }
+]

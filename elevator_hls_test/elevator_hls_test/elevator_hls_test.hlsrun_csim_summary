@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\elevator_hls_test\\elevator_hls_test.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/17/25 08:36:55",
+ "timestampMillis": "1758112615701",
+ "buildStep": {
+  "cmdId": "1e628111-bdea-4b9e-b8ab-7ec4c3d0e778",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\elevator_hls_test\\logs\\elevator_hls_test.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\hls_config.cfg --work_dir elevator_hls_test ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\hls_config.cfg",
+   "--work_dir",
+   "elevator_hls_test"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/17/25 08:36:55",
+ "timestampMillis": "1758112615701",
+ "status": {
+  "cmdId": "1e628111-bdea-4b9e-b8ab-7ec4c3d0e778",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/17/25 08:37:02",
+ "timestampMillis": "1758112622991",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls.cpp",
+     "C:/Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/17/25 08:37:02",
+ "timestampMillis": "1758112622994",
+ "buildStep": {
+  "cmdId": "f6a0dff7-e9bc-4989-a70b-0f3fa0b6725a",
+  "name": "",
+  "logFile": "C:/Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test\\elevator_hls_test\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\nkgMe\\Documents\\Elevator-Project\\elevator_hls_test"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/17/25 08:37:02",
+ "timestampMillis": "1758112622995",
+ "status": {
+  "cmdId": "f6a0dff7-e9bc-4989-a70b-0f3fa0b6725a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/17/25 08:37:09",
+ "timestampMillis": "1758112629811",
+ "status": {
+  "cmdId": "f6a0dff7-e9bc-4989-a70b-0f3fa0b6725a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/17/25 08:37:09",
+ "timestampMillis": "1758112629948",
+ "status": {
+  "cmdId": "1e628111-bdea-4b9e-b8ab-7ec4c3d0e778",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/17/25 08:37:09",
+ "timestampMillis": "1758112629952",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/17/25 08:37:09",
+ "timestampMillis": "1758112629953",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,165 @@
+[
+  {
+    "test_name": "add_multiple_requests([3,2,4,1])",
+    "start_floor": 1,
+    "requested_floors": [
+      3,
+      2,
+      4,
+      1
+    ],
+    "final_floor": 4,
+    "movements": [
+      "    Movement: Floor 1 -> Floor 2 (  UP)",
+      "    Auto-closing door at floor 2 (attempt 1)",
+      "    Movement: Floor 2 -> Floor 3 (  UP)",
+      "    Auto-closing door at floor 3 (attempt 2)",
+      "    Movement: Floor 3 -> Floor 4 (  UP)",
+      "    Auto-closing door at floor 4 (attempt 3)",
+      "    Elevator operation completed successfully"
+    ],
+    "movement_count": 3,
+    "status": {
+      "current_floor": 4,
+      "state": "idle",
+      "direction": 1,
+      "pending_requests": [],
+      "up_queue": [],
+      "down_queue": []
+    }
+  },
+  {
+    "test_name": "add_multiple_requests([8,3,10,1,6])",
+    "start_floor": 4,
+    "requested_floors": [
+      8,
+      3,
+      10,
+      1,
+      6
+    ],
+    "final_floor": 1,
+    "movements": [
+      "    Movement: Floor 4 -> Floor 6 (  UP)",
+      "    Auto-closing door at floor 6 (attempt 1)",
+      "    Movement: Floor 6 -> Floor 8 (  UP)",
+      "    Auto-closing door at floor 8 (attempt 2)",
+      "    Movement: Floor 8 -> Floor 10 (  UP)",
+      "    Auto-closing door at floor 10 (attempt 3)",
+      "    Movement: Floor 10 -> Floor 3 (DOWN)",
+      "    Auto-closing door at floor 3 (attempt 4)",
+      "    Movement: Floor 3 -> Floor 1 (DOWN)",
+      "    Auto-closing door at floor 1 (attempt 5)",
+      "    Elevator operation completed successfully"
+    ],
+    "movement_count": 5,
+    "status": {
+      "current_floor": 1,
+      "state": "idle",
+      "direction": 0,
+      "pending_requests": [],
+      "up_queue": [],
+      "down_queue": []
+    }
+  },
+  {
+    "test_name": "add_floor_request(7) from floor 5",
+    "start_floor": 5,
+    "requested_floors": [
+      7
+    ],
+    "final_floor": 7,
+    "movements": [
+      "    Movement: Floor 5 -> Floor 7 (  UP)",
+      "    Auto-closing door at floor 7 (attempt 1)",
+      "    Elevator operation completed successfully"
+    ],
+    "movement_count": 1,
+    "status": {
+      "current_floor": 7,
+      "state": "idle",
+      "direction": 1,
+      "pending_requests": [],
+      "up_queue": [],
+      "down_queue": []
+    }
+  },
+  {
+    "test_name": "Downward: floors [6,3,1] from floor 10",
+    "start_floor": 10,
+    "requested_floors": [
+      6,
+      3,
+      1
+    ],
+    "final_floor": 1,
+    "movements": [
+      "    Movement: Floor 10 -> Floor 6 (DOWN)",
+      "    Auto-closing door at floor 6 (attempt 1)",
+      "    Movement: Floor 6 -> Floor 3 (DOWN)",
+      "    Auto-closing door at floor 3 (attempt 2)",
+      "    Movement: Floor 3 -> Floor 1 (DOWN)",
+      "    Auto-closing door at floor 1 (attempt 3)",
+      "    Elevator operation completed successfully"
+    ],
+    "movement_count": 3,
+    "status": {
+      "current_floor": 1,
+      "state": "idle",
+      "direction": 0,
+      "pending_requests": [],
+      "up_queue": [],
+      "down_queue": []
+    }
+  },
+  {
+    "test_name": "Edge case: request current floor",
+    "start_floor": 5,
+    "requested_floors": [
+      6
+    ],
+    "final_floor": 6,
+    "movements": [
+      "    Movement: Floor 5 -> Floor 6 (  UP)",
+      "    Auto-closing door at floor 6 (attempt 1)",
+      "    Elevator operation completed successfully"
+    ],
+    "movement_count": 1,
+    "status": {
+      "current_floor": 6,
+      "state": "idle",
+      "direction": 1,
+      "pending_requests": [],
+      "up_queue": [],
+      "down_queue": []
+    }
+  },
+  {
+    "test_name": "Large span: floors [1,5,10]",
+    "start_floor": 6,
+    "requested_floors": [
+      1,
+      5,
+      10
+    ],
+    "final_floor": 1,
+    "movements": [
+      "    Movement: Floor 6 -> Floor 10 (  UP)",
+      "    Auto-closing door at floor 10 (attempt 1)",
+      "    Movement: Floor 10 -> Floor 5 (DOWN)",
+      "    Auto-closing door at floor 5 (attempt 2)",
+      "    Movement: Floor 5 -> Floor 1 (DOWN)",
+      "    Auto-closing door at floor 1 (attempt 3)",
+      "    Elevator operation completed successfully"
+    ],
+    "movement_count": 3,
+    "status": {
+      "current_floor": 1,
+      "state": "idle",
+      "direction": 0,
+      "pending_requests": [],
+      "up_queue": [],
+      "down_queue": []
+    }
+  }
+]

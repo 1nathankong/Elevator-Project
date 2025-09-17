@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nkgMe/Documents/Elevator-Project/elevator_controller_10floor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module elevator_controller_10floor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nkgMe/Documents/Elevator-Project/elevator_10floor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module elevator_10floor_tb
