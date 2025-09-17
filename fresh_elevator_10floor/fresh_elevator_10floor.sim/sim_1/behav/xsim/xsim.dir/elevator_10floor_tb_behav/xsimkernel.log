@@ -1,4 +1,0 @@
-Running: xsim.dir/elevator_10floor_tb_behav/xsimk.exe -simmode gui -wdb elevator_10floor_tb_behav.wdb -simrunnum 0 -socket 52185
-Design successfully loaded
-Design Loading Memory Usage: 9840 KB (Peak: 9840 KB)
-Design Loading CPU Usage: 15 ms

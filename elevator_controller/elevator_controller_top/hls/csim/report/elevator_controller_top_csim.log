@@ -1,5 +1,0 @@
-INFO: [SIM 2] *************** CSIM start ***************
-INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../../elevator_hls_tb.cpp in debug mode
-   Compiling ../../../../../elevator_hls.cpp in debug mode
-   Generating csim.exe
