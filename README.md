@@ -115,6 +115,12 @@ typedef ap_int<2> direction_t;   // 2 bits (-1, 0, 1)
 - Added explicit loop bounds and trip count pragmas
 - **Result**: Successful C simulation, ready for synthesis
 
+### Phase 3: Vivado 2025.1 Integration (Attempted)
+- Attempted to use Vivado 2025.1 for enhanced synthesis capabilities
+- **Challenge**: Converting between Python validation and Vivado's rigid synthesis constraints proved too complicated
+- **Issue**: Vivado's rigidness made it difficult to maintain the flexibility needed for cross-validation with Python implementation
+- **Decision**: Continued with HLS approach for better Python-to-hardware translation workflow
+
 ## Validation Results
 
 ### Python Implementation Results
@@ -229,13 +235,30 @@ std::vector<int> requests;  // Not synthesizable
 ## Files Structure
 
 ```
-elevator-project/
-├── optimized_elevator.py          # Original Python implementation
-├── elevator_hls.cpp               # HLS C++ implementation
-├── elevator_hls.h                 # HLS header definitions
-├── elevator_hls_tb.cpp            # HLS testbench
-├── python_10floor_results.json    # Python validation results
-└── README.md                       # This documentation
+Elevator-Project/
+├── Python src/                    # Python implementations
+│   ├── optimized_elevator.py      # Original SCAN algorithm implementation
+│   ├── cached_elevator.py         # AI-enhanced caching version
+│   ├── elevator_tests.py          # Unit tests for optimized elevator
+│   ├── cached_elevator_tests.py   # Unit tests for cached elevator
+│   └── elevator_comparison.py     # Performance comparison utilities
+├── HLS src/                       # HLS C++ implementations
+│   ├── elevator_hls.cpp           # HLS C++ implementation
+│   ├── elevator_hls.h             # HLS header definitions
+│   ├── elevator_hls_tb.cpp        # HLS testbench
+│   └── hls_script.tcl             # HLS synthesis script
+├── JSON Results/                  # Validation and test results
+│   ├── python_10floor_results.json # Python validation results
+│   └── cross_validation_report.json # Cross-validation analysis
+├── elevator_hls_test/             # HLS project directory
+│   └── elevator_hls_test/         # Vivado HLS generated project
+│       ├── hls/                   # HLS synthesis outputs
+│       ├── logs/                  # Build and simulation logs
+│       └── reports/               # Synthesis reports
+├── _ide/                          # IDE configuration files
+│   ├── settings.json              # Vitis IDE settings
+│   └── logs/                      # IDE logs
+└── README.md                      # This documentation
 ```
 
 ## Future Work
