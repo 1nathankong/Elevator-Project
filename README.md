@@ -152,24 +152,24 @@ Stress Test Results:
 === Minimal HLS Elevator Controller Test ===
 --- Test 1: Reset ---
 Floor: 1, State: 0, Direction: 0, Accepted: 0
-✓ Reset test PASSED
+Reset test PASSED
 --- Test 2: Request floor 3 ---
 Floor: 2, State: 1, Direction: 1, Accepted: 1
-✓ Request accepted test PASSED
+Request accepted test PASSED
 --- Test 3: Movement simulation ---
 Cycle 1: Floor: 3, State: 2, Direction: 0, Accepted: 0
 Cycle 2: Floor: 3, State: 0, Direction: 0, Accepted: 0
-✓ Reached target floor 3
-✓ Movement test PASSED
+Reached target floor 3
+Movement test PASSED
 --- Test 4: Request floor 1 (downward) ---
 Floor: 2, State: 1, Direction: -1, Accepted: 1
-✓ Downward request test PASSED
+Downward request test PASSED
 --- Test 5: Invalid request (floor 0) ---
 Floor: 1, State: 0, Direction: 0, Accepted: 0
-✓ Invalid request rejection test PASSED
+Invalid request rejection test PASSED
 === Test Results ===
 Passed: 5/5
-🎉 All tests PASSED! Ready for synthesis.
+All tests PASSED! Ready for synthesis.
 INFO: [SIM 211-1] CSim done with 0 errors.
 C-simulation finished successfully
 ```
