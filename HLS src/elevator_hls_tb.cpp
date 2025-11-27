@@ -36,10 +36,10 @@ int main() {
     print_status();
 
     if (current_floor == 1 && current_state == STATE_IDLE && current_direction == DIR_IDLE) {
-        cout << "✓ Reset test PASSED" << endl;
+        cout << "Reset test PASSED" << endl;
         pass_count++;
     } else {
-        cout << "✗ Reset test FAILED" << endl;
+        cout << "Reset test FAILED" << endl;
     }
     test_count++;
 
@@ -53,10 +53,10 @@ int main() {
     print_status();
 
     if (request_accepted && current_state == STATE_MOVING && current_direction == DIR_UP) {
-        cout << "✓ Request accepted test PASSED" << endl;
+        cout << "Request accepted test PASSED" << endl;
         pass_count++;
     } else {
-        cout << "✗ Request accepted test FAILED" << endl;
+        cout << "Request accepted test FAILED" << endl;
     }
     test_count++;
 
@@ -71,16 +71,16 @@ int main() {
         print_status();
 
         if (current_floor == 3 && current_state == STATE_IDLE) {
-            cout << "✓ Reached target floor 3" << endl;
+            cout << "Reached target floor 3" << endl;
             break;
         }
     }
 
     if (current_floor == 3 && current_state == STATE_IDLE) {
-        cout << "✓ Movement test PASSED" << endl;
+        cout << "Movement test PASSED" << endl;
         pass_count++;
     } else {
-        cout << "✗ Movement test FAILED" << endl;
+        cout << "Movement test FAILED" << endl;
     }
     test_count++;
 
@@ -113,10 +113,10 @@ int main() {
     print_status();
 
     if (!request_accepted) {
-        cout << "✓ Invalid request rejection test PASSED" << endl;
+        cout << "Invalid request rejection test PASSED" << endl;
         pass_count++;
     } else {
-        cout << "✗ Invalid request rejection test FAILED" << endl;
+        cout << "Invalid request rejection test FAILED" << endl;
     }
     test_count++;
 
@@ -125,10 +125,10 @@ int main() {
     cout << "Passed: " << pass_count << "/" << test_count << endl;
 
     if (pass_count == test_count) {
-        cout << "🎉 All tests PASSED! Ready for synthesis." << endl;
+        cout << "All tests PASSED! Ready for synthesis." << endl;
         return 0;
     } else {
-        cout << "❌ Some tests FAILED. Check implementation." << endl;
+        cout << "Some tests FAILED. Check implementation." << endl;
         return 1;
     }
 }
